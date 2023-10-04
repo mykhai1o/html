@@ -6,15 +6,131 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Figma Land</title>
     <link rel="shortcut icon" href="img/Figma-logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="">
     <style>
-        body {background-color: rgba(116, 115, 99, 0.281);}
+        @font-face {
+            font-family: 'Graphik';
+            src: url('fonts/GraphikRegular.woff2') format('woff2');
+            font-weight: normal;
+        }
+        @font-face {
+            font-family: 'Graphik';
+            src: url('fonts/GraphikBold.woff2') format('woff2');
+            font-weight: bold;
+        }
+        html{
+            padding: 0;
+            margin: 0 auto;
+            max-width: 1777px;
+
+        }
+        
+        body {
+            
+            background: no-repeat url(img/darkfigmaL.svg) 50% 0.4% / 186px, no-repeat url(img/Rectangle\ 9.svg) 50% 0/ 1775px, rgba(116, 115, 99, 0.281);
+            font-family: 'Graphik';
+            margin: 0 auto;
+            
+            
+        }
+
+        /*Шапка */
+        header{
+            display: flex;
+            justify-content: center;
+        }
+        nav {
+            width: 1210px;
+            
+            
+            
+            
+        }
+        .social-media, nav, .menu {
+            display: flex;
+            justify-content:space-between;
+        }
+        .social-media {
+            width: 170px;
+            margin-top: 56px;
+        }
+        .menu{
+            width: 437px;
+            margin: 52px 40px;
+            
+        }
+        .menu a {
+            color: #fff;
+            font-family: 'Graphik';
+            font-weight: normal;
+            text-decoration: none;
+        
+        }
+
+        /*Перший блок з HOME-Page*/
+        .home-page{
+            width: 1777px;
+            height: 1042px;
+           
+            
+            
+        }
+        .home-page__title{
+            width: 786px;
+            height: 295px;
+            margin: 150px auto 0;
+        }
+        .home-page__title h1 {
+            color: #fff;
+            font-size: 74px;
+            font-weight: bold;
+            text-align: center;
+            margin: 20px;
+        }
+        .home-page__title p {
+            color: #fff;
+            font-size: 28px;
+            font-weight: normal;
+            text-align: center;
+        }
+        /*.home-page__button{
+            width: 236px;
+            height: 52px;
+            margin: 0 auto;
+            border-radius: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #2091f9;
+            
+        }*/
+        .home-page__button button{
+            font-size: 20px;
+            width: 236px;
+            height: 52px;
+            margin: 0 auto;
+            border-radius: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #2091f9;
+            color: #fff;
+            border: #2091f9;
+            
+        }
+
         h1 {color:#252B42;}
         p {color:#252B42;}
-        </style>
+
+        footer{
+            position: relative;
+            bottom: 0;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <img src="img/Rectangle 9.svg" alt="Background image" width="400">
+        <!--<img src="img/Rectangle 9.svg" alt="Background image" width="400">-->
         <nav>
             <div class="menu">
                 <a href="#"><span>Home</span></a>
@@ -23,10 +139,12 @@
                 <a href="#"><span>About</span></a>
                 <a href="#"><span>Contact</span></a>
             </div>
+            <!-- В CSS
             <div>
                 <img src="img/darkfigmaL.svg" alt="Figma Land" width="50">
             </div>
-            <div>
+            -->
+            <div class="social-media">
                 <a href="https://twitter.com/?lang=uk"><img src="img/Vector1.svg" alt="Twitter icon"></a></a>
                 <a href="https://uk-ua.facebook.com/"><img src="img/Vector2.svg" alt="Facebook icon"></a>
                 <a href="https://www.linkedin.com/"><img src="img/Vector3.svg" alt="linkedin icon"></a>
@@ -43,7 +161,7 @@
                     <p>Most calendars are designed for teams. Slate is designed for freelancers</p>
                 </div>
                 <div class="home-page__button">
-                    <button><span>Try For Free</span></button>
+                    <button>Try For Free</button>
                 </div>
             </div>
 
