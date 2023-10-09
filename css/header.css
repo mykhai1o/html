@@ -1,1 +1,31 @@
+.header .container{
+    display: flex;
+    flex-direction: column;
+    padding: 0 24px;
+}
+.header__logo{
+    display: block;
+    justify-self: flex-start;
+    margin: 30px 0;
+}
+.header__logo img {
+    width: 162px;
+    
+}
 
+.header__nav ul{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    /* Прибираю меню */
+    display: none;
+}
+.header__nav ul li{
+    list-style-type: none;
+    font-size: 17px;
+    align-self: center;
+    color: inherit;
+}
+.header__nav ul li a{
+    text-decoration: none;
+}

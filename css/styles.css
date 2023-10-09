@@ -1,5 +1,6 @@
 @import url(./globals.css);
-@import url(./footer.css);
-@import url(./home-page.css);
-@import url(./header.css);
 @import url(./controls.css);
+@import url(./header.css);
+@import url(./home-page.css);
+@import url(./about-us.css);
+@import url(./footer.css);
