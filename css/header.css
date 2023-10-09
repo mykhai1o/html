@@ -1,17 +1,1 @@
-@media (max-width: 990){
-    body{
-        min-width: 375;
-    }
-    
-    
-.header {
-    
-    padding: 1vw 0.5vw;
-    display: flex;
-    justify-content: space-between;
-}
 
-.header__nav{
-    display: flex;
-    justify-content: space-around;
-}

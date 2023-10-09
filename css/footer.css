@@ -1,7 +1,7 @@
 .footer {
-    background-color: #0d3c00;
-    color: #fff;
+    background-color: var(--footer-color);
+    color: var(--footer-text-color);
 }
 .footer a{
-    color: #fff;
+    color: var(--footer-text-color);
 }

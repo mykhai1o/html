@@ -4,19 +4,20 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Source Sans 3', sans-serif;
+    
 };
-
 
 :root {
     scroll-behavior: smooth;
-    
-};
+    --footer-color: rgb(13,60,0);
+    --footer-text-color: #fff;
+    font-family: 'Source Sans 3', sans-serif;
+}
 
 
 img {
     display: block;
     max-width: 100%
-};
+}
 
 
