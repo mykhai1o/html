@@ -84,16 +84,21 @@
 }
 
 @media ( min-width: 768px){
-    .header__nav ul {
-        display: flex;
-        flex-direction: row;
-        gap: 15px;
-    }
     .header__burger {
         display: none;
     }
     .header .container{
         display: flex;
         flex-direction: row;   
+    }
+    .header__nav{
+        position:static;
+        display: flex;    
+    }
+    .header__nav ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 15px;
     }
 }
