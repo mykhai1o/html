@@ -31,7 +31,10 @@ img {
     display: block;
     max-width: 100%
 }
-
+.carousel-card__icon img{
+    width: 60px;
+    height: 60px;
+}
 h1, h2 {
     color: #79a207;
     letter-spacing: 2.8px;

@@ -45,10 +45,24 @@
     }
     
 }
+@media ( min-width: 1024px){
+    .home-page p {
+        margin-top: 35px;
+        font-size: 18px;
+        width: 60%;
+    }
+}
 @media ( min-width: 1440px){
     .home-page p {
         margin-top: 35px;
         font-size: 18px;
         width: 50%;
+    }
+}
+@media ( min-width: 2100px){
+    .home-page p {
+        margin-top: 35px;
+        font-size: 18px;
+        width: 45%;
     }
 }
