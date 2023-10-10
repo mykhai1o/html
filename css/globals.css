@@ -9,18 +9,21 @@ body{
     box-sizing: border-box;
     color: #191c18;
 }
-
 :root {
     scroll-behavior: smooth;
     --footer-color: rgb(13,60,0);
     --footer-text-color: #fff;
-    font-family: 'Source Sans 3', sans-serif;
-    
+    font-family: 'Source Sans 3', sans-serif; 
+}
+h1, h2 {
+    color: #79a207;
+    font-size: 14px;
 }
 
 .container{
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 24px;
 }
 
 img {

@@ -1,5 +1,20 @@
 .home-page {
+    padding: 130px 0;
+    /*!!!!!!*/
     background: url('../img/home-page-img.png');
-    padding: 290px 0;
-
+}
+.home-page h3{
+    font-family: 'Lora', serif;
+    color: #0d3c00;
+    font-size: 48px;
+    margin-top: 20px;
+}
+.home-page p{
+    margin-top: 35px;
+    font-size: 18px;
+}
+.home-page__buttons{
+    display: flex;
+    flex-direction: column;
+    margin-top: 35px;
 }
