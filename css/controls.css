@@ -1,0 +1,31 @@
+.button {
+    margin: 10px;
+    text-decoration: none;
+    padding: 20px;
+    color:#fff;
+    font-size: 13px;
+    letter-spacing: 0.121px;
+    line-height: 21.78px;
+    font-weight: 700;
+    background-color: var(--main-button-color);
+    width: 140px;
+    border: 1px solid var(--main-button-color);
+    border-radius: 50px;
+    text-align: center;
+}
+
+#glass-button {
+    margin: 10px;
+    text-decoration: none;
+    padding: 20px;
+    color: var(--main-dark-color);
+    font-size: 13px;
+    letter-spacing: 0.121px;
+    line-height: 21.78px;
+    font-weight: 700;
+    background-color:rgba(238, 206, 206, 0.1);
+    width: 140px;
+    border: 1px solid var(--main-dark-color);
+    border-radius: 50px;
+    text-align: center;
+}

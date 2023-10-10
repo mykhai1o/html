@@ -14,6 +14,9 @@ body{
     scroll-behavior: smooth;
     --footer-color: rgb(13,60,0);
     --footer-text-color: #fff;
+    --main-dark-color: #0d3c00;
+    --main-text-color: #191c18;
+    --main-button-color: #79a207;
     font-family: 'Source Sans 3', sans-serif;
     
 }
@@ -21,11 +24,19 @@ body{
 .container{
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 24px;
 }
 
 img {
     display: block;
     max-width: 100%
+}
+
+h1, h2 {
+    color: #79a207;
+    letter-spacing: 2.8px;
+    font-size: 14px;
+    line-height: 20.02px;
 }
 
 
