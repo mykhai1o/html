@@ -93,12 +93,17 @@
     }
     .header__nav{
         position:static;
-        display: flex;    
+        display: flex; 
     }
     .header__nav ul {
         display: flex;
         flex-direction: row;
         align-items: center;
         gap: 15px;
+    }
+    .header .container .container__wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;   
     }
 }

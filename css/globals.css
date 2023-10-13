@@ -1,15 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Lora:wght@700&family=Source+Sans+3:wght@400;700;900&display=swap');
-
-body{
-    min-width: 320px;
-}
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     color: #191c18;
 }
-
 :root {
     scroll-behavior: smooth;
     --footer-color: rgb(13,60,0);
@@ -20,23 +15,43 @@ body{
     font-family: 'Source Sans 3', sans-serif;
     
 }
-
+body{
+    min-width: 320px;
+}
 .container{
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 24px;
 }
-
 img {
     display: block;
     max-width: 100%
 }
-
 h1, h2 {
-    color: #79a207;
+    position: relative;
+}
+h1 span, h2 span {
+    color: var(--main-button-color);
     letter-spacing: 2.8px;
     font-size: 14px;
     line-height: 20.02px;
+    padding-left: 18px;
 }
-
-
+h1::before, h2::before {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 2px;
+    background-color: var(--main-button-color);
+    border-radius: 50px;
+    top: 9px;
+}
+h1::after, h2::after {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 2px;
+    background-color: var(--main-button-color);
+    border-radius: 50px;
+    top: 9px;
+}

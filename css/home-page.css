@@ -1,9 +1,11 @@
 .home-page {
     background: url('../img/home-page-img.png');
+    padding-top: 130px;
 
 }
+.home-page container{
+}
 .home-page h1 {
-    padding-top: 130px;
     font-size: 14px;
 }
 .home-page h3 {
