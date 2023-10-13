@@ -1,7 +1,12 @@
 .home-page {
     background: url('../img/home-page-img.png');
+<<<<<<< HEAD
     padding-top: 130px;
 
+=======
+    background-size: cover;
+    background-position: 0;
+>>>>>>> ad18015a1a8b7deab5ca5edb5e01d2b53a586b84
 }
 .home-page container{
 }
@@ -14,10 +19,12 @@
     font-size: 48px;
     line-height: 52.8px;
     margin-top: 35px;
+    width: 80%;
 }
 .home-page p {
     margin-top: 35px;
     font-size: 18px;
+    width: 100%;
 }
 .home-page__buttons{
     margin-top: 25px;
@@ -31,5 +38,37 @@
         display: flex;
         flex-direction: row;
         padding-bottom: 130px;
+    }
+    .home-page {
+        background: url('../img/home-page-img.png');
+        background-size: cover;
+        background-position: 25% 0;
+    }
+    .home-page p {
+        margin-top: 35px;
+        font-size: 18px;
+        width: 65%;
+    }
+    
+}
+@media ( min-width: 1024px){
+    .home-page p {
+        margin-top: 35px;
+        font-size: 18px;
+        width: 60%;
+    }
+}
+@media ( min-width: 1440px){
+    .home-page p {
+        margin-top: 35px;
+        font-size: 18px;
+        width: 50%;
+    }
+}
+@media ( min-width: 2100px){
+    .home-page p {
+        margin-top: 35px;
+        font-size: 18px;
+        width: 45%;
     }
 }
