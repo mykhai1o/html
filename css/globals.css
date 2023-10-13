@@ -27,13 +27,10 @@ img {
     display: block;
     max-width: 100%
 }
-<<<<<<< HEAD
-=======
 .carousel-card__icon img{
     width: 60px;
     height: 60px;
 }
->>>>>>> ad18015a1a8b7deab5ca5edb5e01d2b53a586b84
 h1, h2 {
     position: relative;
 }
@@ -42,13 +39,14 @@ h1 span, h2 span {
     letter-spacing: 2.8px;
     font-size: 14px;
     line-height: 20.02px;
-    padding-left: 18px;
+    padding-left: 20px;
+    padding-right: 3px;
 }
 h1::before, h2::before {
     content: "";
     position: absolute;
     width: 15px;
-    height: 2px;
+    height: 1.5px;
     background-color: var(--main-button-color);
     border-radius: 50px;
     top: 9px;
@@ -57,7 +55,7 @@ h1::after, h2::after {
     content: "";
     position: absolute;
     width: 15px;
-    height: 2px;
+    height: 1.5px;
     background-color: var(--main-button-color);
     border-radius: 50px;
     top: 9px;
