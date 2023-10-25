@@ -1,17 +1,15 @@
 .header {
     padding:  10px;
-    min-width: 320px;
-    
+    min-width: 320px; 
 }
 .header .container{
     display: flex;
-    flex-direction: column;
-    padding: 0 10px;   
+    flex-direction: column;  
 }
 .header .container .container__wrapper{
     display: flex;
     justify-content: space-between;
-    align-items: center;   
+    align-items: center;  
 }
 .header__logo{
     flex: 0;
@@ -19,28 +17,30 @@
 }
 .header__logo img {
     min-width: 200px;
-    
 }
 .header__nav{
-    position: fixed;
+    /*position: fixed;
     top: 90px;
     left: 0;
+    ??????
+    */
     width: 100%;
     background-color: #fff;
-    padding: 0 -24px;
+    display: flex;
+    justify-content: center;
 }
 
 .header__nav ul{
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    padding-bottom: 15px;
+    gap: 30px;
+    padding: 30px 0;
     /* Прибираю меню */
-    display: none;
+    /*display: none;*/
 }
 .header__nav ul li{
     list-style-type: none;
-    font-size: 17px;
+    font-size: 26px;
     align-self: center;
 }
 .header__nav ul li a{
@@ -54,14 +54,15 @@
     flex: 1;
     position: relative;
     max-width: 20px;
-    height: 16px;
+    height: 17px;
     margin-top: 15px;
+    cursor: pointer;
 }
 .header__burger span{
     background-color: var(--main-text-color);
     width: 100%;
     height: 2px;
-    top: 7px;
+    top: 8px;
     border-radius: 50px;
     position: absolute;
 }
@@ -84,7 +85,7 @@
     border-radius: 50px;
 }
 
-@media ( min-width: 768px){
+@media ( min-width: 900px){
     .header__burger {
         display: none;
     }
@@ -113,5 +114,8 @@
         display: flex;
         justify-content: space-between;
         align-items: center;   
+    }
+    .header__nav ul li{
+        font-size: 18px;
     }
 }

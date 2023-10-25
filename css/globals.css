@@ -5,6 +5,9 @@
     box-sizing: border-box;
     color: #191c18;
 }
+ul{
+    margin:0;
+}
 :root {
     scroll-behavior: smooth;
     --footer-color: rgb(13,60,0);
@@ -13,7 +16,6 @@
     --main-text-color: #191c18;
     --main-button-color: #79a207;
     font-family: 'Source Sans 3', sans-serif;
-    
 }
 body{
     min-width: 320px;
