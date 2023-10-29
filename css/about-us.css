@@ -1,6 +1,33 @@
 .about-us {
-    display: none;
+    background-color: var(--extra-background-color);
+    padding: 90px 0 65px;
 }
+.about-us h2::before {
+    top: 17px;
+}
+.about-us h2::after {
+    top: 17px;
+}
+.about-us h4 {
+    margin-top: 20px;
+}
+.about-us p {
+    margin-top: 25px;
+}
+.about-us ul {
+    margin-top: 22px;
+    padding-left: 16px;
+}
+.about-us ul li {
+    margin-bottom: 16px;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 16px;
+}
+.about-us .button {
+    margin-top: 60px;
+}
+
+
 .carousel-card__icon img{
     width: 60px;
     height: 60px;

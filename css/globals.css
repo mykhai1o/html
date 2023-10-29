@@ -10,8 +10,10 @@ ul{
 }
 :root {
     scroll-behavior: smooth;
+    --extra-background-color: #faf5f2;
     --footer-color: rgb(13,60,0);
     --footer-text-color: #fff;
+    --footer-text-color-dirty: #a9a9a9;
     --main-dark-color: #0d3c00;
     --main-text-color: #191c18;
     --main-button-color: #79a207;
@@ -41,6 +43,7 @@ h1 span, h2 span {
     color: var(--main-button-color);
     letter-spacing: 2.8px;
     font-size: 14px;
+    font-weight: 700;
     line-height: 20.02px;
     padding-left: 20px;
     padding-right: 3px;
@@ -62,4 +65,8 @@ h1::after, h2::after {
     background-color: var(--main-button-color);
     border-radius: 50px;
     top: 9px;
+}
+h4 {
+    font-family: 'Lora', serif;
+    font-size: 34px;
 }
