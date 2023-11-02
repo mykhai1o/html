@@ -1,6 +1,6 @@
 .about-us {
     background-color: var(--extra-background-color);
-    padding: 90px 0 65px;
+    padding: 90px 0 0;
 }
 .about-us h4 {
     margin-top: 20px;
@@ -24,20 +24,23 @@
 .about-us .button {
     margin: 20px 0;
 }
-.about-us .container {
+.about-us .about-us__wrapper {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 50px;
 }
-
-
 .carousel-card__icon img{
     width: 60px;
     height: 60px;
 }
-
+.about-us__decoration-wave {
+    background: url('../img/about-changing-color-wave.png');
+    background-size: cover;
+    background-position: 0;
+    height: 10vw;
+}
 @media (min-width:900px ) {
-    .about-us .container {
+    .about-us .about-us__wrapper {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
