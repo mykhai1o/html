@@ -1,14 +1,15 @@
 .button {
+    display: block;
     margin: 10px;
     text-decoration: none;
-    padding: 20px;
+    padding: 20px 32px;
     color:#fff;
-    font-size: 13px;
+    font-size: 11px;
     letter-spacing: 0.121px;
     line-height: 21.78px;
     font-weight: 700;
     background-color: var(--main-button-color);
-    width: 140px;
+    width: 158px;
     border: 1px solid var(--main-button-color);
     border-radius: 50px;
     text-align: center;

@@ -16,6 +16,7 @@ ul{
     --footer-text-color-dirty: #a9a9a9;
     --main-dark-color: #0d3c00;
     --main-text-color: #191c18;
+    --extra-main-text-color: rgb(112, 112, 112);
     --main-button-color: #79a207;
     font-family: 'Source Sans 3', sans-serif;
 }
@@ -38,6 +39,9 @@ img {
 }
 h1, h2 {
     position: relative;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20.02px;
 }
 h1 span, h2 span {
     color: var(--main-button-color);

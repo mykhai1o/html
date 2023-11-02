@@ -1,3 +1,33 @@
+h1 {
+    position: relative;
+}
+h1 span {
+    color: var(--main-button-color);
+    letter-spacing: 2.8px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20.02px;
+    padding-left: 20px;
+    padding-right: 3px;
+}
+h1::before {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 1.5px;
+    background-color: var(--main-button-color);
+    border-radius: 50px;
+    top: 9px;
+}
+h1::after {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 1.5px;
+    background-color: var(--main-button-color);
+    border-radius: 50px;
+    top: 9px;
+}
 .home-page {
     background: url('../img/home-page-img.png');
     background-size: cover;

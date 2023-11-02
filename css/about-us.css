@@ -2,17 +2,13 @@
     background-color: var(--extra-background-color);
     padding: 90px 0 65px;
 }
-.about-us h2::before {
-    top: 17px;
-}
-.about-us h2::after {
-    top: 17px;
-}
 .about-us h4 {
     margin-top: 20px;
 }
 .about-us p {
     margin-top: 25px;
+    color: var(--extra-main-text-color);
+    font-size: 17px;
 }
 .about-us ul {
     margin-top: 22px;
@@ -21,14 +17,33 @@
 .about-us ul li {
     margin-bottom: 16px;
     font-family: 'Source Sans 3', sans-serif;
-    font-size: 16px;
+    font-size: 14px;
+    letter-spacing: 0.896px;
+    line-height: 19.6px;
 }
 .about-us .button {
-    margin-top: 60px;
+    margin: 20px 0;
+}
+.about-us .container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 
 .carousel-card__icon img{
     width: 60px;
     height: 60px;
+}
+
+@media (min-width:900px ) {
+    .about-us .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 20px;
+    }
+    .about-us__info, .about-us__frame {
+        flex: 1;
+    }
 }
