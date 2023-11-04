@@ -1,3 +1,13 @@
+
+
+
+
+
+
+
+
+
+
 const carouselCards = [
     {
         id: "1",
@@ -42,7 +52,7 @@ const carouselCards = [
         description: "We not only sell plants and everything related to them but are also ready to answer any of your questions! Contact us to select the best plant!",
     },
 ];
-renderCarouselCards(carouselCards);
+//renderCarouselCards(carouselCards);
 function renderCarouselCards(carouselCards) {
     let carouselCardsString = '';
     for (const card of carouselCards) {
