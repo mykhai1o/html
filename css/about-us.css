@@ -32,15 +32,15 @@
 .about-us__decoration-wave {
     background: url('../img/about-changing-color-wave.png');
     background-size: cover;
-    background-position: 0;
-    height: 120px;
+    background-position: 0 0;
+    height: 150px;
 }
 .about-us__carousel {
     margin-top: 130px;
     padding: 0 40px;
     position: relative;
 }
-.about-us__carousel-slide {
+.about-us__carousel-card {
     background-color: var(--main-background-color);
     border-top: 4px solid var(--accent-color);
     border-radius: 5px;
@@ -48,9 +48,10 @@
     height: 430px;
     box-shadow: 0px 0px 25px #e6e6e6;
 }
-/*.carousel-card__icon img{
-   
-}*/
+.about-us__carousel-slide {
+    display: grid;
+            grid-template-columns: 1fr;
+}
 .carousel-card__icon {
     background-color: var(--light-accent-color);
     padding: 15px;
@@ -90,7 +91,7 @@
     right: 0px;
     width: 20px;
 }
-.about-us__carousel-slide {
+.about-us__carousel-card {
     position: relative;
 }
 .about-us__carousel-card h5 {
@@ -98,6 +99,7 @@
 }
 .about-us__carousel-card p {
     margin-top: 20px;
+    position: relative;
 }
 .about-us__carousel-card a {
     position: absolute;

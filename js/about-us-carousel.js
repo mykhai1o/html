@@ -56,14 +56,33 @@ const slides = [
 //dark - 0d3c00
 //light - e0e9c6
 let currentSlideIndex = 0;
+
 function renderSlides() {
     const slideContainer = document.querySelector('.about-us__carousel-slide');
     slideContainer.innerHTML = slides[currentSlideIndex];
-    /*if (window.matchMedia('(min-width: 768px)').matches) {
-        const secondSlideIndex = currentSlideIndex + 1 >= slides.length ? 0 : currentSlideIndex + 1;
+    slideContainer.style = 
+        `
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-column-gap: 20px;
+        `;
+    const secondSlideIndex = currentSlideIndex + 1 >= slides.length ? 0 : currentSlideIndex + 1;
+    if (window.matchMedia('(min-width: 600px)').matches) {
         slideContainer.innerHTML += slides[secondSlideIndex];
-    }*/
+        slideContainer.style.gridTemplateColumns = '1fr 1fr';
+    }
+    const thirdSlideIndex = secondSlideIndex + 1 >= slides.length ? 0 : secondSlideIndex + 1;
+    if (window.matchMedia('(min-width: 900px)').matches) {
+        slideContainer.innerHTML += slides[thirdSlideIndex];
+        slideContainer.style.gridTemplateColumns = '1fr 1fr 1fr';
+    }
+    const fourthSlideIndex = thirdSlideIndex + 1 >= slides.length ? 0 : thirdSlideIndex + 1;
+    if (window.matchMedia('(min-width: 1224px)').matches) {
+        slideContainer.innerHTML += slides[fourthSlideIndex];
+        slideContainer.style.gridTemplateColumns = '1fr 1fr 1fr 1fr';
+    }
 }
+
 renderSlides();
 
 function nextSlide() {
@@ -74,10 +93,12 @@ function prevSlide() {
     currentSlideIndex = currentSlideIndex - 1 < 0 ? 5 : currentSlideIndex - 1;
     renderSlides();
 }
-//setInterval(nextSlide, 1000);
+setInterval(nextSlide, 3000);
 
 const rightArrow = document.querySelector('.about-us__carousel-btn-next');
 rightArrow.addEventListener('click', nextSlide);
 
 const leftArrow = document.querySelector('.about-us__carousel-btn-prev');
 leftArrow.addEventListener('click', prevSlide);
+
+window.addEventListener('resize', renderSlides);
